@@ -1,7 +1,5 @@
-/**
+/*
  * Assignment: JavaScript Operators Solutions
- * Repository: codinggita/CGXSwarrnim
- * Path: Semester-1/JavaScript/03. JS Operators/Assignment.md
  */
 
 // ==========================================
