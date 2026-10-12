@@ -665,3 +665,252 @@ console.log(NaN !== NaN);  //Output : true
 
 let input = prompt('Enter a value: ');
 console.log(input !== '0');
+
+
+
+
+
+
+// ==========================================
+// Part C] Relational Operator
+// ==========================================
+
+// ------------------------------------------
+// 5. Greater Than >
+// ------------------------------------------
+
+
+//Q-1 A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.
+
+studentMarks=78
+passingMarks=40
+console.log(studentMarks>passingMarks);  //Output : true
+
+
+//Q-2 Temperature today is 35°C and yesterday it was 28°C. Check if today is hotter.
+
+todayTemperature = 35
+let yesterdayyTemperature = 28
+console.log(todayTemperature > yesterdayyTemperature);  //Output : true
+
+//Q-3 Predict the output:
+
+console.log(15 > 10); //Output : True
+console.log(10 > 15); //Output : false
+console.log(10 > 10); //Output : false
+
+//Q-4 Predict the output:
+
+console.log("20" > 15);  //Output : true
+console.log("5" > "10"); //Output : true
+console.log("abc" > 10);  //Output : flase
+
+//Q-5 What is the result of null > 0 and undefined > 0? Explain.
+
+console.log(null > 0);  //Output : false
+console.log(undefined > 0);  //Output : false
+
+//Q-6 A shop has 120 items in stock. A customer wants to buy 85 items. Write a condition using > to check if stock is sufficient.
+
+let inStock=120
+let customerNeeded = 85
+console.log(inStock > customerNeeded);
+
+//Q-7 Predict the output:
+
+console.log(true > false); // Output : True
+console.log("10" > "2"); //Output : false
+console.log(NaN > 5);  //Output : false
+
+
+// ------------------------------------------
+// 6. Less Than <
+// ------------------------------------------
+
+
+//Q-1 A box can hold maximum 50 kg. Current weight is 42 kg. Check if more items can still be added.
+
+let maxWeightHold = 50
+let currentWeight = 42
+console.log(currentWeight<maxWeightHold);  //Output : true
+
+
+//Q-2 Age of a person is 16. Minimum age required is 18. Check if the person is underage.
+
+let personAge=16
+let MinAge = 18
+console.log(personAge<MinAge);  //Output : true
+
+//Q-3 Predict the output:
+
+console.log(8 < 12); //Output : true
+console.log(20 < 10); //Output : false
+console.log(7 < 7); //Output : false
+
+//Q-4 Predict the output:
+
+console.log("8" < 10); //Output : true
+console.log("20" < "3"); //Output : true
+console.log("hello" < 5);  //Output : false
+
+//Q-5 What is the result of null < 0 and undefined < 0? Explain.
+
+console.log(null < 0);  //Output : false
+console.log(undefined < 0);  //Output : false
+
+//Q-6 A tank capacity is 500 litres. Current water level is 375 litres. Write a condition using < to check if it is not full.
+
+let tankCapacity=500
+let currentWaterLevel = 375
+console.log(currentWaterLevel<tankCapacity);
+
+//Q-7 Predict the output:
+
+console.log(false < true); //Output : true
+console.log("5" < "15"); //Output : false
+console.log(NaN < 10);//Output : false
+
+
+
+
+// ------------------------------------------
+// 7. Greater Than or Equal To >=
+// ------------------------------------------
+
+
+//Q-1 Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.
+
+let minMarks = 75
+let studentscored = 75
+console.log(minMarks>=studentscored);  //Output : true
+
+
+//Q-2 Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket
+
+let TicketPrice = 300
+let personBalance = 300
+console.log(TicketPrice>=personBalance);  //Output : true
+
+//Q-3 Predict the output:
+
+console.log(25 >= 25); //Output : true
+console.log(30 >= 25); //Output : true
+console.log(20 >= 25); //Output : false
+
+//Q-4 Predict the output:
+
+console.log("25" >= 25); //Output : true
+console.log("10" >= "2"); //Output : false
+console.log(null >= 0);  //Output : true
+
+//Q-5 What is the result of undefined >= 0? Explain.
+
+console.log(null >= 0);  //Output : true
+
+
+//Q-6 A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using >= to check if the lift is full or overloaded.
+
+let liftCapacity=8
+let currentCapacity = 8
+console.log(liftCapacity>=currentCapacity); //Output : true
+
+//Q-7 Predict the output:
+
+console.log(true >= 1); //Output : true
+console.log("" >= 0); //Output : true
+console.log(NaN >= NaN);//Output : false
+
+
+// ------------------------------------------
+// 8. Less Than or Equal To <=
+// ------------------------------------------
+
+
+//Q-1 Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.
+
+let maxspeed = 60
+let currentspeed = 60
+console.log(currentspeed<=maxspeed);  //Output : true
+
+
+//Q-2 A student needs at least 40 marks to pass. He scored 39. Check if he has failed.
+
+let stuMarks=40
+let marksScored=39
+console.log(marksScored<=stuMarks);  //Output : true
+
+//Q-3 Predict the output:
+
+console.log(15 <= 20); //Output : true
+console.log(20 <= 15); //Output : false
+console.log(15 <= 15); //Output : true
+
+//Q-4 Predict the output:
+
+console.log("15" <= 20); //Output : true
+console.log("30" <= "5"); //Output : false
+console.log(null <= 0);  //Output : true
+
+//Q-5 What is the result of undefined <= 0? Explain.
+
+console.log(undefined <= 0);  //Output : false
+
+//Q-6 A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using <= to check if more books can be added.
+
+let bagCapacity= 10
+let currentCap = 10
+console.log(currentCap<=bagCapacity); //Output : true
+
+//Q-7 Predict the output:
+
+console.log(false <= 0); //Output : true
+console.log("" <= 0); //Output : true
+console.log(NaN <= 5); //Output : false
+
+
+// ------------------------------------------
+// Mixed Practice (>, <, >=, <=)
+// ------------------------------------------
+
+//Q-1 Write expressions to check
+
+  // * Whether age 18 is greater than or equal to voting age 18.
+  let personnAge=16
+  let MinnAge = 18
+  console.log(personnAge>=MinnAge);
+
+  // *Whether temperature 32 is less than 35.
+
+  let todayTemperature = 35
+  let yesterdayTemperature = 32
+  console.log(yesterdayTemperature<todayTemperature);
+
+  // *Whether score 90 is greater than 85.
+
+  let studentscore=85
+  let minscore=90
+  console.log(minscore>studentscore);
+
+
+//Q-2 Predict the output:
+
+console.log(10 > 5 && 5 < 10); //Output : true
+console.log("10" >= 10); //Output : true
+console.log(null <= undefined); //Output : false
+console.log("5" < "10" && 5 > 2); //Output : false
+
+//Q-3 A product costs ₹499. A customer has ₹500. Write conditions using >= and < to decide if the customer can buy it and if any change will be left.
+
+let productCost = 499;
+let customermoney = 500;
+
+console.log(customermoney>=productCost); //Output: true
+console.log(productCost<customermoney); //Output: true
+
+//Q-4 Explain why "10" > "2" is false but 10 > 2 is true.
+
+/*
+Because when both are string type in JavaScript compares them character by character or alphabetically
+(lexicographically) and when both or atleast one type is number type so JavaScript compares them as numbers.
+
+*/
