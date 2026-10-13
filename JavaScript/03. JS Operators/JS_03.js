@@ -914,3 +914,156 @@ Because when both are string type in JavaScript compares them character by chara
 (lexicographically) and when both or atleast one type is number type so JavaScript compares them as numbers.
 
 */
+
+
+// ------------------------------------------
+// Part E]: Increment / Decrement Operators (++ / --)
+// ------------------------------------------
+
+//Part - A
+
+//Q-1 A counter starts at 5. Use the increment operator to increase it by 1 and print the new value.
+
+let counter = 5;
+counter++
+console.log(counter)  //Output : 6
+
+//Q-2 A player has 3 lives. Use the decrement operator to reduce one life and print the remaining lives.
+
+let livess = 3;
+livess--
+console,log(livess) //Output : 2
+
+//Q-3 Start with score = 10. Increase the score using ++ and print it.
+
+let scoree = 10;
+scoree++
+console.log(scoree) //Output : 11
+
+//Q-4 Start with items = 8. Decrease the items using -- and print it.
+
+let items = 8;
+items--
+console.log(items) //Output : 7
+
+//Q-5 Declare count = 0. Increment it twice and print the final value.
+
+let counT = 0;
+counT++
+countt=++counT 
+console.log(countt) //Output : 2
+
+
+
+//Part - B
+
+/*Q-6 Start with x = 5.
+Create y = x++
+Print both x and y.
+Explain why the values are different.
+*/
+
+let X = 5;
+let Y = X++;
+console.log(X,Y) //Output : 6 5
+
+
+/*Q-7 Start with a = 5.
+Create b = ++a
+Print both a and b.
+Explain the difference from the previous question.
+*/
+
+let A = 5
+let B = ++A
+console.log(A,B)  //Output : 6 6  Prefix increment: increment first, then use new value
+
+
+/*Q-8 Start with lives = 3.
+Use post-decrement (lives--) and store the result in previousLives.
+Print both variables.
+*/
+
+let live = 3;
+let previousLives = live--
+console.log(live, previousLives)  //Output : 2 3
+
+
+/*Q-9 Start with attempts = 0.
+Use pre-increment (++attempts) and store the result in currentAttempts.
+Print both variables.
+*/
+
+let attempts = 0;
+let currentAttempts = ++attempts
+console.log(attempts, currentAttempts)  //Output : 1 1
+
+
+/*Q-10 Start with points = 100.
+
+Increase it using ++
+Then decrease it using --
+Print the final value.
+*/
+
+let points = 100;
+points++
+points-- 
+console.log(points)  //Output : 100
+
+
+
+//Part - C
+
+/*Q-11 Predict the output:
+
+let x = 10;
+let y = x++;
+let z = ++x;
+console.log(x, y, z);
+*/
+
+// Output : 12 10 12
+
+
+
+/*Q-12 Predict the output:
+
+let a = 5;
+let b = a-- + ++a;
+console.log(a, b);
+*/
+
+// Output : 5 10
+
+
+/*Q-13 Predict the output:
+
+let m = 7;
+let n = --m + m++;
+console.log(m, n);
+*/
+
+// Output : 7 12
+
+
+
+/*Q-14 Predict the output:
+
+let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q);
+*/
+
+// Output : 5 13
+
+
+
+/*Q-15 Predict the output:
+
+let val = 0;
+val = val++ + ++val;
+console.log(val);
+*/
+
+// Output : 02
