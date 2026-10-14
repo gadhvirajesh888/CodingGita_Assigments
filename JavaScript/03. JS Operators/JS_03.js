@@ -1067,3 +1067,269 @@ console.log(val);
 */
 
 // Output : 02
+
+
+
+
+// ------------------------------------------
+// Part F]: Logical Operators
+// ------------------------------------------
+
+
+//1. Logical AND &&
+
+//Write a JavaScript program for each:
+
+//Q-1 Stored username is "admin" and password is 1234. Check if both are valid using && and print the result.
+
+let username = 'admin';
+let password = 1234
+let result3 = (username==admin && password==1234)
+console.log(result3);
+
+//Q-2 A user is logged in (isLoggedIn = true) and has permission (hasPermission = true). Check if they can access a page using &&.
+
+let isLoggedIn = true;
+let hasPermission = true;
+let canAccess = isLoggedIn && hasPermission
+console.log(canAccess)
+
+//Q-3 A product is in stock (inStock = true) and its price is less than ₹1000 (price = 800). Check if it can be bought using &&.
+
+let inStockk = true;
+let pricee = 800;
+let canBuy = inStockk && pricee<1000;
+console.log(canBuy) ;
+
+//Q-4 A student has marks 75 and attendance 80. Passing requires marks greater than 65 and attendance greater than 70. Check using &&.
+
+let markss = 75;
+let attendence = 80
+let isPassed = markss>65 && attendence>70;
+console.log(isPassed);
+
+//Q-5 Two conditions: isWeekend = true and isHoliday = false. A party happens only if both are true. Check using &&.
+
+let isWeekend = true;
+let isHoliday = false;
+let PartyHappened = isHoliday && isHoliday;
+console.log(PartyHappened);
+
+//Additional Questions (Logical AND &&)
+
+/* Q-6 Predict the output:
+let a = 0;
+let b = 10;
+let result = a && b;
+console.log(result);
+*/
+
+//Output: 0
+
+/* Q-7 Predict the output:
+let x = 5;
+let y = 10;
+let result = (x > 3 && y) || 0;
+console.log(result);
+*/
+
+//Output: 10
+
+/* Q-8 Predict the output:
+let p = "Hello";
+let q = "";
+let r = "World";
+let result = p && q && r;
+console.log(result);
+*/
+
+//Output: 
+
+/* Q-9 Predict the output:
+let val = 5;
+let condition = val && (val = 0);
+console.log(condition);
+console.log(val);
+*/
+
+//Output: 0     
+//        0
+
+
+/* Q-10 Predict the output:
+let x = 10;
+let y = 20;
+let result = (x && y) && (x > y);
+console.log(result);
+*/
+
+//Output: false
+
+
+
+
+
+//2. Logical OR ||
+
+
+//Write a JavaScript program for each:
+
+//Q-1 A user can login with either a correct password (passwordCorrect = true) or a valid OTP (otpValid = false). Check if login is allowed using ||.
+
+let passwordCorrect = true;
+let otpValid =false;
+let loginAllowed = passwordCorrect || otpValid
+console.log(loginAllowed)
+
+//Q-2 A discount applies if the user is a member (isMember = false) or has a coupon (hasCoupon = true). Check using ||.
+
+let isMember = false;
+let hasCoupon = true;
+let discountApplied = isMember || hasCoupon
+console.log(discountApplied)
+
+//Q-3 Entry is allowed if age is above 18 (age = 16) or height is above 150 cm (height = 155). Check using ||.
+
+let age = 16;
+let height = 155;
+let entryAllowed = age>18 || height>150
+console.log(entryAllowed)
+
+//Q-4 A form is valid if either email is given (emailGiven = true) or phone is given (phoneGiven = false). Check using ||.
+
+let emailGiven= true;
+let phoneGiven = false;
+let formValid = emailGiven || phoneGiven
+conosole.log(formValid);
+
+//Q-5 A game level opens if score is above 1000 (score = 900) or time bonus is collected (timeBonus = true). Check using ||.
+
+let sscore = 900;
+let timeBonus = true;
+let gameLevelOpens = sscore>1000 || timeBonus;
+console.log(gameLevelOpens)
+
+
+//Additional Questions (Logical OR ||)
+
+/* Q-6 Predict the output:
+let a = 0;
+let b = false;
+let c = "";
+let d = null;
+let e = 42;
+let result = a || b || c || d || e;
+console.log(result);
+*/
+
+//Output : 42
+
+/* Q-7 Predict the output:
+let x = "Hello" || 0;
+let y = 0 || "Hi";
+console.log(x, y);
+*/
+
+//Output : Hello Hi
+
+/* Q-8 Predict the output:
+let a = 10;
+let b = 20;
+let result = (a < 5) || (b > 15);
+console.log(result);
+*/
+
+//Output : true
+
+/* Q-9 Predict the output:
+let val = 5;
+let condition = val || (val = 0);
+console.log(condition);
+console.log(val);
+*/
+
+//Output : 5 , 5
+
+/* Q-10 Predict the output:
+let x = "" || 0 || false || null || undefined || "OK";
+console.log(x);
+*/
+
+//Output : OK
+
+
+
+
+//3. Logical NOT !
+
+//Write a JavaScript program for each:
+
+//Q-1 A user is not banned (isBanned = false). Check if they can login by negating isBanned using !.
+
+let isBanned = false;
+console.log(!isBanned)
+
+//Q-2 A task is not completed (isCompleted = false). Check if it is still pending using !.
+
+let isCompleted = false;
+console.log(!isCompleted);
+
+//Q-3 A light is on (isOn = true). Check if it is off using !.
+
+let isOn = true;
+console.log(!isOn)
+
+//Q-4 A subscription is not active (isActive = false). Check if the user cannot access premium content using !.
+
+let isActive = false;
+conosole.log(!isActive);
+
+//Q-5 A file is not read‑only (isReadOnly = false). Check if it can be edited using !.
+
+let isReadOnly = false;
+console.log(!isReadOnly)
+
+
+//Additional Questions (Logical OR !)
+
+/* Q-6 Predict the output:
+let a = 0;
+let b = 1;
+console.log(!a, !b);
+*/
+
+//Output : true false
+
+/* Q-7 Predict the output:
+let x = "Hello";
+let y = "";
+console.log(!x, !y);
+*/
+
+//Output : false true
+
+/* Q-8 Predict the output:
+let val = 5;
+let result = !val;
+console.log(result);
+*/
+
+//Output : false
+
+/* Q-9 Predict the output:
+let a = 10;
+let b = 20;
+let result = !(a && b);
+console.log(result);
+*/
+
+//Output : false
+
+/* Q-10 Predict the output:
+let x = 0;
+let y = 1;
+let result = !(x || y);
+console.log(result);
+*/
+
+//Output : false
